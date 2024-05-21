@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+:root{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100dvh;
+
+}
+
+nav{
+    width: 100%;
+    height: auto;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+}
+li{ 
+    margin-right:4%;
+}
+
+#kanji-logo{
+    color: bisque;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    color: rgb(255, 197, 127);
+    font-size: larger;
+    font-weight: 700;
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+    width: 100%;
+    transition: .2s;
+}
+
+/*-----------------------------------------TABLA*/
+table{
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+td,th{
+    border: 1px solid black;
+}
+
+.comida-img{
+    width: 150px;
+    height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    ul{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

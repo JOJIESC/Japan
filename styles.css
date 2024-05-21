@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+:root{
+    font-family: 'Montserrat', sans-serif;
+    background-color: bisque;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100dvh;
+    width: 100%;
+    background-image: url(./assets/japan-wallpaper3.jpg);
+    background-size:cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/*------------------------BARRA DE NAVEGACION---------------------------*/
+nav{
+    width: 100%;
+    height: auto;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+}
+li{ 
+    margin-right:4%;
+}
+
+#kanji-logo{
+    color: bisque;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    color: bisque;
+    font-size: larger;
+    font-weight: 700;
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+    width: 100%;
+    transition: .2s;
+}
+
+/*------------------------MAIN--------------------*/
+.titulo{
+    font-size: 9rem;
+    color:rgba(255, 255, 255, 0.904);
+    margin-left: 5%;
+    font-weight: bolder;}
+
+.welcome-content{
+    color:white;
+    margin-left: 5%;
+    width: 30%;
+}
+
+/*------------------------------MEDIA QUERY MOVILES---------------*/
+@media only screen and (max-width: 767px) {
+    .titulo{
+        position: absolute;
+        top: 10%;
+        font-size: 6rem;
+    }
+
+    .welcome-content{
+        position: absolute;
+        top:50%;
+        width: 70%;
+    }
+
+    ul{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+}
